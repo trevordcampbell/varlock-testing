@@ -1,7 +1,7 @@
 import { ENV } from "varlock/env";
 
 // biome-ignore lint/suspicious/noConsole: allow
-console.log(`APP_ENV: ${ENV.APP_ENV}`);
+console.log(`NODE_ENV: ${ENV.NODE_ENV}`);
 // biome-ignore lint/suspicious/noConsole: allow
 console.log(`LOG_LEVEL: ${ENV.LOG_LEVEL}`);
 // biome-ignore lint/suspicious/noConsole: allow
