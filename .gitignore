@@ -1,0 +1,16 @@
+# dependencies (bun install)
+node_modules
+
+# output
+dist
+
+# Environment Variables, Secrets, and Configuration files
+*.env.*
+# We want to publish the .env.schema file to the repository for reference and for the CI/CD pipeline to use
+!.env.schema
+!.env.development
+!.env.staging
+!.env.production
+
+# GitHub issue template
+github-issue-template.md

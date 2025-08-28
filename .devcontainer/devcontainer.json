@@ -1,0 +1,25 @@
+{
+  "name": "Varlock Testing Dev Container",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-containers",
+        "ms-azuretools.vscode-docker",
+        "biomejs.biome",
+        "varlock.env-spec-language"
+      ],
+      "settings": {
+        "editor.tabSize": 2,
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+    "ghcr.io/schlich/devcontainer-features/powerlevel10k:1": {},
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+    "ghcr.io/shyim/devcontainers-features/bun:0": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  }
+}

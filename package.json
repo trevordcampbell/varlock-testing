@@ -1,0 +1,35 @@
+{
+  "name": "varlock-testing",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "//": "Base scripts for the project",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "check": "turbo check",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "dev": "APP_ENV=development varlock run -- turbo dev",
+    "// Environment validation": "Varlock validation and type generation",
+    "env:types": "varlock load",
+    "env:validate": "varlock load --check-only",
+    "env:validate:dev": "APP_ENV=development varlock load --check-only",
+    "env:validate:staging": "APP_ENV=staging varlock load --check-only",
+    "env:validate:prod": "APP_ENV=production varlock load --check-only"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.2",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2",
+    "ultracite": "^5.2.5",
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "varlock": "latest"
+  },
+  "packageManager": "bun@1.2.21"
+}

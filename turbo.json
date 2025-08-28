@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalEnv": ["APP_ENV"],
+  "tasks": {
+    "format": {
+      "dependsOn": ["^format"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "outputLogs": "full"
+    },
+    "type-check": {
+      "dependsOn": ["^type-check"],
+      "outputLogs": "full"
+    },
+    "check": {
+      "dependsOn": ["^check"],
+      "outputLogs": "full"
+    },
+    "env:types": {
+      "cache": false,
+      "env": ["APP_ENV"]
+    },
+    "env:validate": {
+      "cache": false,
+      "env": ["APP_ENV"]
+    }
+  }
+}
