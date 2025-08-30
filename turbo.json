@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
-  "globalEnv": ["NODE_ENV"],
+  "globalEnv": ["APP_ENV"],
   "tasks": {
     "format": {
       "dependsOn": ["^format"]
@@ -20,11 +20,11 @@
     },
     "env:types": {
       "cache": false,
-      "env": ["NODE_ENV"]
+      "env": ["APP_ENV"]
     },
     "env:validate": {
       "cache": false,
-      "env": ["NODE_ENV"]
+      "env": ["APP_ENV"]
     }
   }
 }

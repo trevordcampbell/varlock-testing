@@ -1,8 +1,7 @@
-import { ENV } from "varlock/env";
 
 // biome-ignore lint/suspicious/noConsole: allow
-console.log(`NODE_ENV: ${ENV.NODE_ENV}`);
+console.log(`APP_ENV: ${process.env.APP_ENV}`);
 // biome-ignore lint/suspicious/noConsole: allow
-console.log(`LOG_LEVEL: ${ENV.LOG_LEVEL}`);
+console.log(`LOG_LEVEL: ${process.env.LOG_LEVEL}`);
 // biome-ignore lint/suspicious/noConsole: allow
-console.log(`OVERRIDE_LOADED_FROM: ${ENV.OVERRIDE_LOADED_FROM}`);
+console.log(`OVERRIDE_LOADED_FROM: ${process.env.OVERRIDE_LOADED_FROM}`);
